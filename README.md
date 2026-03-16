@@ -33,16 +33,15 @@ Your first digest arrives immediately after setup.
 
 ## Changing Settings
 
-Everything is configurable through conversation. Just tell your agent:
+Your delivery preferences are configurable through conversation. Just tell your agent:
 
-- "Add @username to my follow list"
-- "Remove Lenny's Podcast"
 - "Switch to weekly digests on Monday mornings"
 - "Change language to Chinese"
 - "Make the summaries shorter"
 - "Show me my current settings"
 
-No files to edit, no commands to remember.
+The source list (builders and podcasts) is curated centrally and updates
+automatically — you always get the latest sources without doing anything.
 
 ## Customizing the Summaries
 

@@ -59,5 +59,5 @@ tech, or building products, leave it out entirely.
 - If you have nothing real for a builder, skip them entirely
 
 ### General
-- At the very end, add a line: "Reply to adjust your settings, sources, or summary style."
+- At the very end, add a line: "Reply to adjust your delivery settings or summary style."
 - Keep formatting clean and scannable — this will be read on a phone screen

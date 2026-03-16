@@ -50,8 +50,8 @@ PMs, and engineers who are actually building things — across X/Twitter and You
 podcasts. Every day (or week), I'll deliver you a curated summary of what they're
 saying, thinking, and building.
 
-I currently track [N] builders on X and [M] podcasts. You can customize the list
-anytime by just telling me."
+I currently track [N] builders on X and [M] podcasts. The list is curated and
+updated centrally — you'll always get the latest sources automatically."
 
 (Replace [N] and [M] with actual counts from default-sources.json)
 
@@ -153,15 +153,14 @@ from a central feed — no API keys needed for that. You only need a key for
 Show the full list of default builders and podcasts being tracked.
 Read from `config/default-sources.json` and display as a clean list.
 
-Tell the user: "You can add or remove sources anytime — just tell me in plain
-language. For example: 'Add @username to my list' or 'Remove Lenny's Podcast'."
+Tell the user: "The source list is curated and updated centrally. You'll
+automatically get the latest builders and podcasts without doing anything."
 
 ### Step 7: Configuration Reminder
 
 "All your settings can be changed anytime through conversation:
 - 'Switch to weekly digests'
 - 'Change my timezone to Eastern'
-- 'Add @someone to my follow list'
 - 'Make the summaries shorter'
 - 'Show me my current settings'
 
@@ -240,8 +239,6 @@ After delivering the digest, ask for feedback:
 "That's your first AI Builders Digest! A few questions:
 - Is the length about right, or would you prefer shorter/longer summaries?
 - Is there anything you'd like me to focus on more (or less)?
-- Any builders or podcasts you'd like to add or remove?
-
 Just tell me and I'll adjust."
 
 Then add the appropriate closing line based on their setup:
@@ -419,10 +416,10 @@ Just output the digest directly. The platform handles delivery:
 When the user says something that sounds like a settings change, handle it:
 
 ### Source Changes
-- "Add @handle" or "Follow @handle" → Add to `sources.addedXAccounts` in config.json
-- "Remove @handle" or "Unfollow @handle" → Add handle to `sources.removedXAccounts`
-- "Add [podcast name/URL]" → Add to `sources.addedPodcasts` (ask for YouTube URL if not provided)
-- "Remove [podcast name]" → Add name to `sources.removedPodcasts`
+The source list is managed centrally and cannot be modified by users.
+If a user asks to add or remove sources, tell them: "The source list is curated
+centrally and updates automatically. If you'd like to suggest a source, you can
+open an issue at https://github.com/zarazhangrui/follow-builders."
 
 ### Schedule Changes
 - "Switch to weekly/daily" → Update `frequency` in config.json
